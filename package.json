@@ -7,7 +7,7 @@
     "api"
   ],
   "author": "rockywu 吴佳雷 <wujialei@mgzf.com>",
-  "homepage": "",
+  "homepage": "https://github.com/rockywu/flyio-ext",
   "license": "MIT",
   "main": "index.js",
   "directories": {
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@git.mogo.com:Frontend/mgzf-mini-program.git"
+    "url": "git@github.com:rockywu/flyio-ext.git"
   },
   "scripts": {
     "test": "mocha --require babel-core/register './__tests__/*.js'"
