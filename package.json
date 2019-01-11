@@ -22,7 +22,8 @@
     "url": "https://github.com/rockywu/flyio-ext.git"
   },
   "scripts": {
-    "test": "mocha --require babel-core/register './__tests__/*.js'"
+    "test": "mocha --require babel-core/register './__tests__/*.js'",
+    "patch": "npm version patch && npm publish"
   },
   "dependencies": {
     "flyio": "^0.6.9"
