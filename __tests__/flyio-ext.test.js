@@ -16,35 +16,31 @@ fie.registerApis("name", {
   headers: {
     "content-type":"application/x-www-form-urlencoded"
   },
+  parseJson:false,
   interceptors: [DEFAULT]
 }, {
   ccc: {
     url: "ccc.php",
-    method: "get",
+    method: "post",
   }
 })
 
 fie.registerInterceptor(DEFAULT, {
   request: (req) => {
-    req.body.a = 1;
     return req
   },
   response: (res)=> {
-    if(!res.data.a7) {
-      res.data.a7 = []
-    }
-    res.data.a7.push(1)
     return res
   }
 })
 
 fie.fetch("name.ccc", {
-  name: 1,
+  name: 22,
   age: 23
 }, {
   params : {
-    ddd : 1,
-    ccc: 2
+    name : 2,
+    age: 3
   }
 }).then(v => {
   console.log("ccc", v.data)
