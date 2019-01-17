@@ -1,6 +1,6 @@
 {
   "name": "flyio-ext",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "包装flyio 统一配置项",
   "keywords": [
     "flyio",
