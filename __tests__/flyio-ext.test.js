@@ -11,7 +11,7 @@ const fie = require('../lib/node').default
 
 const DEFAULT = '_DEFAULT_'
 
-fie.registerApis("name", {
+fie.registerApis("base", {
   baseURL: "http://127.0.0.1",
   headers: {
     "content-type":"application/x-www-form-urlencoded"
@@ -34,16 +34,18 @@ fie.registerInterceptor(DEFAULT, {
   }
 })
 
-fie.fetch("name.ccc", {
-  name: 22,
-  age: 23
-}, {
-  params : {
-    name : 2,
-    age: 3
-  }
-}).then(v => {
-  console.log("ccc", v.data)
-})
+console.log(fie.get("base.ccc"))
+
+// fie.fetch("name.ccc", {
+//   name: 22,
+//   age: 23
+// }, {
+//   params : {
+//     name : 2,
+//     age: 3
+//   }
+// }).then(v => {
+//   console.log("ccc", v.data)
+// })
 
 
