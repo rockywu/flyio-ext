@@ -36,16 +36,16 @@ fie.registerInterceptor(DEFAULT, {
 
 console.log(fie.get("base.ccc"))
 
-// fie.fetch("name.ccc", {
-//   name: 22,
-//   age: 23
-// }, {
-//   params : {
-//     name : 2,
-//     age: 3
-//   }
-// }).then(v => {
-//   console.log("ccc", v.data)
-// })
+fie.fetch("base.ccc", {
+  name: 22,
+  age: 23
+}, {
+  params : {
+    name : 2,
+    age: 3
+  }
+}).then(v => {
+  console.log("ccc", v.data)
+})
 
 
